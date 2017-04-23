@@ -57,18 +57,37 @@
 						<section>
 							<h2>Topics could be added here</h2>
 							<ul>
-							<li>Like cool stuff</li>
-							<li>Even funnier quotes</li>
-							<li>And best of yet... Gifs!</li>
+							<li class="fragment">Like cool stuff</li>
+							<li class="fragment">Even funnier quotes</li>
+							<li class="fragment">And best of yet... Gifs!</li>
 							</ul>
 						</section>
+
+						<section>
+							<blockquote cite="https://tools.ietf.org/html/rfc827">”Think of all the possibilities this gives you!” - <a href="https://fi.linkedin.com/in/karo-saharinen-1842b07">Karo Saharinen</a></blockquote>
+						</section>
+
+						<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+							<h2>... and GIFs!</h2>
+						</section>
+
+						<section data-background-video="http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_640x360.m4v" data-background-video-loop data-background-video-muted>
+							<h2>... and Videos!</h2>
+						</section>
+
+						<section>
+							<h2>This video will use up the remaining space on the slide</h2>
+						    <video class="stretch" src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"></video>
+						</section>
+
+
 
 					</section>
 
 
 				<section data-background="jamk-it-logo-white.png" data-background-color="#005a8c" data-background-position="right bottom" data-background-size="21vw">
 
-					<section>
+					<section id="up">
 						<h2>Vertical Slides</h2>
 						<p>Slides can be nested inside of each other.</p>
 						<p>Use the <em>Space</em> key to navigate through all slides.</p>
@@ -85,55 +104,64 @@
 						<h2>Basement Level 2</h2>
 						<p>That's it, time to go back up.</p>
 						<br>
-						<a href="#/2">
+						<a href="#/up">
 							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
 						</a>
 					</section>
 
 				</section>
-
 				<section data-background="jamk-it-logo-white.png" data-background-color="#005a8c" data-background-position="right bottom" data-background-size="21vw">
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
+					<section>
+						<h2>Point of View</h2>
+						<p>
+							Press <strong>ESC</strong> to enter the slide overview.
+						</p>
+						<p>
+							Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
+						</p>
+					</section>
+
+					<section>
+						<h2>Touch Optimized</h2>
+						<p>
+							Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
+						</p>
+					</section>
+					<section data-transition="slide-in fade-out">
+					    <h2>A slide can fade-out.</h2>
+					</section>
+					<section data-transition="fade-in slide-out">
+					    <h2>A slide can fade-in</h2>
+					</section>
 				</section>
 
 				<section data-background="jamk-it-logo-white.png" data-background-color="#005a8c" data-background-position="right bottom" data-background-size="21vw">
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
+					<section>
+						<p class="fragment fade-out">fade-out</p>
+						<p class="fragment fade-up">fade-up (also down, left and right!)</p>
+						<p class="fragment current-visible">visible only once</p>
+						<p class="fragment highlight-current-blue">blue only once</p>
+						<p class="fragment highlight-red">highlight-red</p>
+						<p class="fragment highlight-green">highlight-green</p>
+						<p class="fragment highlight-blue">highlight-blue</p>
+					</section>
 
-				<section data-background="jamk-it-logo-white.png" data-background-color="#005a8c" data-background-position="right bottom" data-background-size="21vw">
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
+					<section>
+						<h3>Code highlighting</h3>
+						<pre><code data-trim data-noescape>
+					(def lazy-fib
+					  (concat
+					   [0 1]
+					   <mark>((fn rfib [a b]</mark>
+					        (lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
+						</code></pre>
 					</section>
 				</section>
 
 					<section data-background="jamk-it-logo-white.png" data-background-color="#005a8c" data-background-position="right bottom" data-background-size="21vw">
 
-						<section>
-							<blockquote cite="https://tools.ietf.org/html/rfc827"><small>”Think of all the possibilities this gives you!” - <a href="https://fi.linkedin.com/in/karo-saharinen-1842b07">Karo Saharinen</a></small></blockquote>
-						</section>
 
-						<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-							<h2>... and GIFs!</h2>
-						</section>
-
-
-						<section data-background="jamk-it-logo-white.png" data-background-color="#005a8c" data-background-position="center" data-background-size="25vw">
+						<section data-background="jamk-it-logo-white.png" data-background-color="#005a8c" data-background-position="center" data-background-size="30vw">
 						</section>
 
 					</section>
