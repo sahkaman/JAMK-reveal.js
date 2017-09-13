@@ -44,12 +44,12 @@
 					<section data-background="jamk-it-logo-white.png" data-background-color="#005a8c" data-background-position="right bottom" data-background-size="21vw" data-background-transition="slide"> 
 
 						<section>
-							<h1><u>Git && Reveal.JS -framework slideille</u></h1>
+							<h1><u>A Presentation background for JAMK</u></h1>
 							<br>
-							<h5>by Karo Saharinen</h5>
+							<h5>by Karo Saharinen & Heli Sutinen</h5>
 							<h5>Institute of Information Technology</h5>
 							<h5>JAMK University of Applied Sciences</h5>
-							<h5>karo.saharinen@jamk.fi</h5>
+							<h5>karo.saharinen@jamk.fi, heli.sutinen@jamk.fi</h5>
 
 						<p style="text-align: center; font-size: 75%;">(Use the <em><b><u>Space</u></b></em> key or <em><b><u>Swipe</u></b></em> to navigate through the slides.)</p>
 						</section>
@@ -57,19 +57,60 @@
 						<section>
 							<h2>Topics could be added here</h2>
 							<ul>
-								<li class="fragment">Like cool stuff</li>
-								<li class="fragment">Even funnier quotes</li>
-								<li class="fragment">And best of yet... Gifs!</li>
+								<li>With different</li>
+								<li>sub-bullets</li>
+								<li>and so on...</li>
 							</ul>
 						</section>
-
+						
 						<section>
-							<blockquote cite="https://tools.ietf.org/html/rfc827">”Think of all the possibilities this gives you!”<br> - <a href="https://fi.linkedin.com/in/karo-saharinen-1842b07">Karo Saharinen</a></blockquote>
+							<h3>You can also slow-mo the bullets with swipe AND/OR spacebar</h3>
+							<ul>
+								<li class="fragment">I'm fragment #1</li>
+								<li class="fragment">I'm fragment #2</li>
+								<li class="fragment">I'm fragment #3</li>
+							</ul>
+						</section>
+						
+						<section>
+							<h5>Text tricks</h5>
+							<p class="fragment fade-out">fade-out</p>
+							<p class="fragment fade-up">fade-up</p>
+							<p class="fragment fade-down">fade-down</p>
+							<p class="fragment fade-left">fade-left</p>
+							<p class="fragment fade-right">fade-right</p>
+							<p class="fragment current-visible">visible only once</p>
+							<p class="fragment highlight-current-blue">blue only once</p>
+							<p class="fragment highlight-red">highlight-red</p>
+							<p class="fragment highlight-green">highlight-green</p>
+							<p class="fragment highlight-blue">highlight-blue</p>
+						</section>
+
+						
+						<section>
+							<h3>And change the order of their appearance</h3>
+							<ul>
+								<li class="fragment" data-fragment-index="3">I'm fragment #3</li>
+								<li class="fragment" data-fragment-index="1">I'm fragment #1</li>
+								<li class="fragment" data-fragment-index="2">I'm fragment #2</li>
+							</ul>
+						</section>
+						
+						<section>
+							<blockquote>”Tämä on todellakin <br><b><u>peiliin katsomisen paikka</u></b><br> slidejen teossa!”<br> - <a href="https://fi.linkedin.com/in/karo-saharinen-1842b07" target="_blank">Karo Saharinen</a></blockquote>
+						</section>
+						
+						<section data-background="https://media.giphy.com/media/26DOs997h6fgsCthu/giphy.gif">
+							<h2 style="text-align: right; color: black;">... Haaste on siis heitetty...!</h2>
 						</section>
 
 						<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-							<h2>... and GIFs!</h2>
+							<h2>... So GIFs work as the background...!</h2>
 						</section>
+						
+						<section data-background="https://media.giphy.com/media/26gYOXsPBh3qv420E/giphy.gif">
+						</section>
+						
 
 						<section data-background-video="http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_640x360.m4v" data-background-video-loop data-background-video-muted>
 							<h2>... and Videos!</h2>
@@ -78,6 +119,11 @@
 						<section>
 							<h2>The Video can also be below the topic</h2>
 						    <video class="stretch" src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" autoplay muted></video>
+						</section>
+						
+						<section>
+							<h2>Youtube videos aswell</h2>
+							<iframe class="stretch" src="https://www.youtube.com/embed/fDI1EKtW_GE" data-autoplay></iframe>
 						</section>
 
 
@@ -92,7 +138,7 @@
 						<p>Slides can be nested inside of each other.</p>
 						<p>Use the <em>Space</em> key to navigate through all slides.</p>
 						<br>
-						<a href="#" class="navigate-down">
+						<a href="#/down">
 							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
 						</a>
 					</section>
@@ -100,7 +146,7 @@
 						<h2>Basement Level 1</h2>
 						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
 					</section>
-					<section>
+					<section id="down">
 						<h2>Basement Level 2</h2>
 						<p>That's it, time to go back up.</p>
 						<br>
@@ -117,7 +163,7 @@
 							Press <strong>ESC</strong> to enter the slide overview.
 						</p>
 						<p>
-							Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
+							Click on any slide to enter that slide.
 						</p>
 					</section>
 
@@ -136,25 +182,26 @@
 				</section>
 
 				<section data-background="jamk-it-logo-white.png" data-background-color="#005a8c" data-background-position="right bottom" data-background-size="21vw">
-					<section>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment fade-up">fade-up (also down, left and right!)</p>
-						<p class="fragment current-visible">visible only once</p>
-						<p class="fragment highlight-current-blue">blue only once</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
 
 					<section>
 						<h3>Code highlighting</h3>
-						<pre><code data-trim data-noescape>
-					(def lazy-fib
-					  (concat
-					   [0 1]
-					   <mark>((fn rfib [a b]</mark>
-					        (lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
-						</code></pre>
+<pre><code class="hljs" data-trim contenteditable>
+function linkify( selector ) {
+  if( supports3DTransforms ) {
+
+    var nodes = document.querySelectorAll( selector );
+
+    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
+      var node = nodes[i];
+
+      if( !node.className ) {
+        node.className += ' roll';
+      }
+    }
+  }
+}
+					</code></pre>
+					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
 					</section>
 				</section>
 
